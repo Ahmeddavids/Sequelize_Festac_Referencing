@@ -1,0 +1,26 @@
+{
+  "name": "sequelize_revision",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js",
+    "db:create": "sequelize db:create",
+    "db:migrate": "npx sequelize-cli db:migrate",
+    "seeding": "npx sequelize-cli db:seed:all",
+    "generate:model": "npx sequelize-cli migration:generate --name file-name"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2",
+    "mysql2": "^3.12.0",
+    "sequelize": "^6.37.5",
+    "uuid": "^11.0.5"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.6.2"
+  }
+}
