@@ -3,5 +3,8 @@ const { createStore, getAllStores, getOneStore } = require('../controllers/store
 
 const router = express.Router();
 
+router.post('/store', createStore);
+router.get('/store', getAllStores);
+router.get('/store/:id', getOneStore);
 
 module.exports = router
