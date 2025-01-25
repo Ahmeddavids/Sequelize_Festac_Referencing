@@ -3,4 +3,3 @@ config
 controllers
 migrations
 routes
-seeders
